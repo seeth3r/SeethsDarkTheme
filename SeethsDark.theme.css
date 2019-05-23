@@ -1,0 +1,19 @@
+//META{"name":"Seeths Better Dark Theme","description":"Better Discord Dark Theme","author":"Seeth#0001","version":"1.01","Website":"https://www.seeth.cf"}*//{}
+
+/*###################################################################################################*/
+@import url("https://www.seeth.cf/core.css");
+@import url('https://www.seeth.cf/copactmemlist.css');
+@import url('https://www.seeth.cf/roundstat.css');
+
+/*###################################################################################################*/
+:root {
+  --main-blue:#7289DA;
+  --main-blue-light:#7289DA; 
+  --main-blue-light-alt:#7289DA; 
+  --main-green:#7289DA; 
+  --main-red:#2C2F33; 
+  --main-purple:#7289DA; 
+  --main-dark:#23272A; 
+  --main-light:#2C2F33; 
+  --bgImage:url(https://www.seeth.cf/bg.png); 
+}
