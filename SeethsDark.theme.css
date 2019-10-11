@@ -1,19 +1,80 @@
-//META{"name":"Seeths Better Dark Theme","description":"Better Discord Dark Theme","author":"Seeth#0001","version":"1.01","Website":"https://www.seeth.cf"}*//{}
 
-/*###################################################################################################*/
-@import url("https://www.seeth.cf/core.css");
 @import url('https://www.seeth.cf/copactmemlist.css');
-@import url('https://www.seeth.cf/roundstat.css');
+@import url('https://dedline.cf/BlurpleReplace.css');
+@import url('https://dedline.cf/FriendGrid.css');
+@import url('https://dedline.cf/darker.css');
 
-/*###################################################################################################*/
-:root {
-  --main-blue:#7289DA;
-  --main-blue-light:#7289DA; 
-  --main-blue-light-alt:#7289DA; 
-  --main-green:#7289DA; 
-  --main-red:#2C2F33; 
-  --main-purple:#7289DA; 
-  --main-dark:#23272A; 
-  --main-light:#2C2F33; 
-  --bgImage:url(https://www.seeth.cf/bg.png); 
-}
+@import url('https://www.seeth.cf/copactmemlist.css');
+
+    :root {
+        
+        --ASW_size: 40px;
+        --width2: 60%;
+        --height2: 85%;
+    }
+    .layers-3iHuyZ {
+        align-items:center;
+        justify-content:center;
+    }
+    .layers-3iHuyZ > .layer-3QrUeG:first-child {
+        opacity: 1!important;
+        transform: none!important;
+    }
+    .layers-3iHuyZ > .layer-3QrUeG.stop-animations:first-child {
+        z-index: 1;
+        transition: 250ms ease-in;
+    }
+    .layers-3iHuyZ > .layer-3QrUeG:nth-child(2)::before {
+        content: "";position: absolute;
+        top: calc((100% - var(--height2)) / -1); 
+        left: calc((100% - var(--width2)) / -1);
+        padding: calc(100% - var(--height2)) calc(100% - var(--width2));
+        background: black;
+        z-index: 2;
+        opacity: 0.6;
+        width: 100%;
+        height: 100%;
+        transition: opacity 350ms ease;
+    }
+    .layers-3iHuyZ > .layer-3QrUeG:nth-child(2) {
+        width: var(--width2);
+        height: var(--height2);
+        top:unset;bottom:unset;
+        right:unset;left:unset;
+        display: block;
+        overflow: visible;
+        transform: translateZ(0);
+        z-index: 3;
+        transition: 350ms ease-out;
+        .messages-popout .message-group .sink-interactions.clickable,
+        .messages-popout .message-group .avatar-large,
+        .messages-popout .message-group h2 {
+            pointer-events: none;
+        }
+    }
+    .horizontal-1ae9ci>.flexChild-faoVW3 div + div .viewBody-2Qz-jg:nth-child(2){
+        filter: blur(10px);
+        transition: 350ms cubic-bezier(1, 0.17, 0.73, 0.56);
+    }
+    .horizontal-1ae9ci>.flexChild-faoVW3 div + div:hover .viewBody-2Qz-jg:nth-child(2) {
+        filter: blur(0px);
+        transition: 450ms cubic-bezier(0.9, 0.38, 0.58, 0.85);
+        transition-delay: 350ms;
+    }
+    .theme-dark .edited-DL9ECl {
+        position: relative;
+        width: 0;
+        color: transparent;
+        font-size: 0px;
+        margin-left: 12px;
+    }
+    .theme-dark .edited-DL9ECl::after {
+        content: '';
+        position: absolute;
+        width: 18px;
+        height: 24px;
+        margin-left: -8px;
+        top: -15px;
+        background: url(https://asteria5675.github.io/src/themes/svgs/edited.svg) center no-repeat;
+        background-size: 18px 22px;
+    }
